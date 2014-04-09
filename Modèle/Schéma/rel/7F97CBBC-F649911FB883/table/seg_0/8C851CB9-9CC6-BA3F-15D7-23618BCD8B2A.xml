@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8C851CB9-9CC6-BA3F-15D7-23618BCD8B2A" name="AdresseClient">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:35:35 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="refClient" id="39010E93-7BF7-7E44-1148-AEA9ED24DAE9">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:36:04 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>876A7550-364A-E9B7-66A2-F6FFC59281CC</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DBC4F2E-D8C7-EAAC-4900-1C866E9AEC01" referredColumn="876A7550-364A-E9B7-66A2-F6FFC59281CC"/>
+</associations>
+</Column>
+<Column name="refAdresse" id="9295360E-1EAC-691B-8D02-1E0BFB8741B6">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:36:22 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>4E52A682-E9F0-5276-5841-359E3504A494</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02C6C653-83DE-A3E2-8C2A-1C9BC3D9E485" referredColumn="4E52A682-E9F0-5276-5841-359E3504A494"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1EDE77C-6B58-E220-F683-AC64815FD9A5" name="AdresseFacturation_PK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:36:22 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9295360E-1EAC-691B-8D02-1E0BFB8741B6"/>
+<colUsage columnID="39010E93-7BF7-7E44-1148-AEA9ED24DAE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F86B709C-C5BB-F0A4-A9CE-60D3E4D79CB1" name="AdresseFacturation_Client_FK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:37:46 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39010E93-7BF7-7E44-1148-AEA9ED24DAE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28B17FB5-B650-9985-5C30-8E8D2A3FB79F" name="AdresseFacturation_Adresse_FK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:37:51 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9295360E-1EAC-691B-8D02-1E0BFB8741B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

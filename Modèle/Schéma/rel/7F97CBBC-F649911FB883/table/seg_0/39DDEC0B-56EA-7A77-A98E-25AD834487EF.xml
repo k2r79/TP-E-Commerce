@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="39DDEC0B-56EA-7A77-A98E-25AD834487EF" name="Produit">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:39:11 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="FF5CF036-0281-EE36-4D1E-47E92451E757">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:41:00 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="reference" id="53106E8F-1180-675D-5F59-24D612FF78DF">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:41:00 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libelle" id="BFA700A7-36D0-5EC8-BAEE-B65FF4F74DFE">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:41:00 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prix" id="25E735E9-1C5D-7136-08BF-1D351DA4D48F">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:42:04 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="refCategorie" id="72DDFFA2-C699-45D7-42FE-D3B9AF44ABF5">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:52:54 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>3A7C6782-C645-1116-3DBC-6D2542CBB697</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="30D399D0-E976-528E-1883-B21C00A3F423" referredColumn="3A7C6782-C645-1116-3DBC-6D2542CBB697"/>
+</associations>
+</Column>
+<Column name="refFournisseur" id="4551B78D-B819-B329-659B-0837D3F29B4F">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:47:30 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>9303B76B-F91F-7EA5-D2A0-DB0E83C079F4</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="96B1BBF3-FD91-5311-F554-98B4D99A686D" referredColumn="9303B76B-F91F-7EA5-D2A0-DB0E83C079F4"/>
+</associations>
+</Column>
+<Column name="refTva" id="C32E3417-78F4-4B33-5ACA-10FB521CC607">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:42:04 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>B126D174-08A7-6475-6FC2-663AA97224A9</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0CB85E2A-BB19-33B8-6637-2CFA08081286" referredColumn="B126D174-08A7-6475-6FC2-663AA97224A9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96D6C799-4C26-FE17-61E1-033671E2F610" name="Produit_PK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:41:00 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF5CF036-0281-EE36-4D1E-47E92451E757"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44F0C5B5-5C05-DE9E-F2DC-5FF83AEE4F8B" name="Produit_Tva_FK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:44:33 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C32E3417-78F4-4B33-5ACA-10FB521CC607"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA58CE7E-23F4-EED3-894A-96E389389C33" name="Produit_Fournisseur_FK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:47:43 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4551B78D-B819-B329-659B-0837D3F29B4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B1AFF793-9FC3-0ADC-A74F-EF7C274B6B31" name="Produit_Categorie_FK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:53:12 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72DDFFA2-C699-45D7-42FE-D3B9AF44ABF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

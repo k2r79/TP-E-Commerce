@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="3A9615C3-51DD-7DC4-4310-A1E71D33D588" name="Adresse" seqName="seg_0"/>
+   <object objectType="Table" objectID="8C851CB9-9CC6-BA3F-15D7-23618BCD8B2A" name="AdresseClient" seqName="seg_0"/>
+   <object objectType="Table" objectID="404FED0E-8B77-5353-82F3-F8C5154601D7" name="Categorie" seqName="seg_0"/>
+   <object objectType="Table" objectID="691BF891-9CD5-21F5-6973-3BCA043D9EDE" name="Civilite" seqName="seg_0"/>
+   <object objectType="Table" objectID="2B7515AD-AF95-8123-D4C7-28ED1070EEAC" name="Client" seqName="seg_0"/>
+   <object objectType="Table" objectID="F42F542D-D52C-163F-7EFD-1442C4CE7D45" name="Commande" seqName="seg_0"/>
+   <object objectType="Table" objectID="62DD689C-970A-06DE-8096-4E4C17915299" name="CommandeProduit" seqName="seg_0"/>
+   <object objectType="Table" objectID="AE89C8B2-5D3D-6F2E-DD5A-9874C9FDFDC2" name="Expediteur" seqName="seg_0"/>
+   <object objectType="Table" objectID="C3F28514-9A61-F542-7D87-FC80251E98F1" name="Fournisseur" seqName="seg_0"/>
+   <object objectType="Table" objectID="2310E6DB-A0F8-F331-9607-B984CA09F661" name="MoyenPaiement" seqName="seg_0"/>
+   <object objectType="Table" objectID="39DDEC0B-56EA-7A77-A98E-25AD834487EF" name="Produit" seqName="seg_0"/>
+   <object objectType="Table" objectID="AC6CED90-B601-1D3A-30E7-2412A8A212FD" name="Statut" seqName="seg_0"/>
+   <object objectType="Table" objectID="D4907EEE-6A1A-8057-0EDF-2BFB406C2807" name="StatutCommande" seqName="seg_0"/>
+   <object objectType="Table" objectID="BF7DCBDE-D0CA-93C5-E3F6-6AB9341FBCD2" name="Tva" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="02C6C653-83DE-A3E2-8C2A-1C9BC3D9E485" name="AdresseFacturation_Adresse_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="4DBC4F2E-D8C7-EAAC-4900-1C866E9AEC01" name="AdresseFacturation_Client_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9407F6F8-E963-6125-5F30-58DAF7F8776D" name="Categorie_Categorie_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="C3141DC9-91DB-19E7-92BD-5B8E273B348F" name="Client_Civilite_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="865FCE09-37F6-FE32-1BB1-BF30F89AEF68" name="CommandeProduit_Commande_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="B8885C14-9B74-7288-DBE7-53B440BDFDA6" name="CommandeProduit_Produit_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="26DBDEB9-AE98-FD75-13EF-4F74486BA871" name="Commande_Adresse_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="671E01F4-599F-7986-9150-0AAB97414CA0" name="Commande_Adresse_FKv2" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="08882150-4ADB-2DA1-834B-8518B2206C0F" name="Commande_MoyenPaiement_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="86A439B2-C12D-58C0-A2B2-8C8CC409D185" name="Commande_Expediteur_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="09555C94-68CA-6214-4496-D7295306985A" name="Fournisseur_Adresse_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="30D399D0-E976-528E-1883-B21C00A3F423" name="Produit_Categorie_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="96B1BBF3-FD91-5311-F554-98B4D99A686D" name="Produit_Fournisseur_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="0CB85E2A-BB19-33B8-6637-2CFA08081286" name="Produit_Tva_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="09044905-5A52-D6C5-9C55-8A0D9FFB6B29" name="StatutCommande_Commande_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="F72AD047-A2FA-43C1-1C6F-4F99F3EEEECE" name="StatutCommande_Statut_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

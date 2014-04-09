@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B7515AD-AF95-8123-D4C7-28ED1070EEAC" name="Client">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:24:07 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="876A7550-364A-E9B7-66A2-F6FFC59281CC">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:25:13 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pseudo" id="4A32DBDA-B718-0778-2373-671AE05B2BF4">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:25:46 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="8443D055-E256-7C8F-451E-37A04C78D64F">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:26:00 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom" id="A39B0417-B879-F351-9EB7-82B1E23C3FF7">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:26:19 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenom" id="9041C2A0-1404-6496-2ACB-72DA7F10D24E">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:26:31 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="refCivilite" id="F62CF8C7-63BE-B310-40C4-792E39C225EF">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:27:50 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>5A4C27D5-441D-F4EA-D755-D8C41B411E7D</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C3141DC9-91DB-19E7-92BD-5B8E273B348F" referredColumn="5A4C27D5-441D-F4EA-D755-D8C41B411E7D"/>
+</associations>
+</Column>
+<Column name="dateDeNaissance" id="2629E782-8C8E-80D0-8921-7933D9481FD1">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:32:15 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E68538E-B560-24F3-9701-894DD2DA0B0C" name="Client_PK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:25:13 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="876A7550-364A-E9B7-66A2-F6FFC59281CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B8DF149E-A0DF-3CF8-5C47-8B3C426F162D" name="Client_Civilite_FK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:33:57 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F62CF8C7-63BE-B310-40C4-792E39C225EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

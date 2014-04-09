@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3A9615C3-51DD-7DC4-4310-A1E71D33D588" name="Adresse">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:28:38 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="4E52A682-E9F0-5276-5841-359E3504A494">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:29:28 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libelle" id="E89E2455-F73B-8E18-8E7C-A4FCD90E586C">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:29:50 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom" id="27FA7806-661E-73F7-34F3-4966CC885729">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:30:11 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenom" id="FCFEBFF8-5B69-23F7-B138-A9D5380716CE">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:30:21 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Column_5" id="40C373A0-4BA8-57B0-0122-06BA165782FB">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:30:24 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D771983E-FBA5-5D29-BB82-4B68390A7AC3" name="Adresse_PK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:29:28 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E52A682-E9F0-5276-5841-359E3504A494"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

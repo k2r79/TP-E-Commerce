@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D4907EEE-6A1A-8057-0EDF-2BFB406C2807" name="StatutCommande">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:12:00 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="8C5BD7A4-DC87-31CB-1D51-33E966B54860">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:13:07 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="refCommande" id="CB816EAA-61B8-2B58-9165-E113969715BD">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:13:07 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>D7762E9C-D8B4-EFEB-ACD1-28E400A77324</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="09044905-5A52-D6C5-9C55-8A0D9FFB6B29" referredColumn="D7762E9C-D8B4-EFEB-ACD1-28E400A77324"/>
+</associations>
+</Column>
+<Column name="refStatut" id="C9E9F83D-D8C3-D1F6-DDF6-E32AA6F77D36">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:13:22 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>5134FB1D-8298-CAF4-BE5B-45CD2A716D6F</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F72AD047-A2FA-43C1-1C6F-4F99F3EEEECE" referredColumn="5134FB1D-8298-CAF4-BE5B-45CD2A716D6F"/>
+</associations>
+</Column>
+<Column name="date" id="2D2FF97D-7401-378A-5542-618089FA3896">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:13:36 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2241D914-532C-C862-3D16-D6CAC6BCF293" name="StatutCommande_PK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:13:07 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C5BD7A4-DC87-31CB-1D51-33E966B54860"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A87A97CE-DE6E-28B9-F207-9FAA13E71400" name="StatutCommande_Commande_FK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:13:50 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB816EAA-61B8-2B58-9165-E113969715BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D921B05C-253C-E968-FDAA-0A044FEA4407" name="StatutCommande_Statut_FK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:13:50 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9E9F83D-D8C3-D1F6-DDF6-E32AA6F77D36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="404FED0E-8B77-5353-82F3-F8C5154601D7" name="Categorie">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:51:02 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="3A7C6782-C645-1116-3DBC-6D2542CBB697">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:51:35 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libelle" id="B1FBBC2D-D77A-6573-F385-D94B75BAA58E">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:51:35 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="refParent" id="9F4BC20D-8447-312F-76DC-0104E8CAE57D">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:51:59 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>3A7C6782-C645-1116-3DBC-6D2542CBB697</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9407F6F8-E963-6125-5F30-58DAF7F8776D" referredColumn="3A7C6782-C645-1116-3DBC-6D2542CBB697"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD3128FF-E2C5-35BA-55EF-16C895C6564F" name="Categorie_PK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:51:35 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A7C6782-C645-1116-3DBC-6D2542CBB697"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32A63ED7-337E-A287-98C9-7E382D8FC8D3" name="Categorie_Categorie_FK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:52:20 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F4BC20D-8447-312F-76DC-0104E8CAE57D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
