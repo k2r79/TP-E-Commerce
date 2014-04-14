@@ -14,7 +14,6 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="reference" id="53106E8F-1180-675D-5F59-24D612FF78DF">
@@ -73,11 +72,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
-<delegate>9303B76B-F91F-7EA5-D2A0-DB0E83C079F4</delegate>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="96B1BBF3-FD91-5311-F554-98B4D99A686D" referredColumn="9303B76B-F91F-7EA5-D2A0-DB0E83C079F4"/>
-</associations>
 </Column>
 <Column name="refTva" id="C32E3417-78F4-4B33-5ACA-10FB521CC607">
 <createdBy>Vincent Kelleher</createdBy>
@@ -93,6 +88,17 @@
 <associations>
 <colAssociation fkAssociation="0CB85E2A-BB19-33B8-6637-2CFA08081286" referredColumn="B126D174-08A7-6475-6FC2-663AA97224A9"/>
 </associations>
+</Column>
+<Column name="stock" id="2AE2AAE0-0AF0-CDF6-D867-6331A908E338">
+<createdBy>fredericradigoy</createdBy>
+<createdTime>2014-04-14 14:47:01 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -123,9 +129,6 @@
 <ownerDesignName>Schéma</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="4551B78D-B819-B329-659B-0837D3F29B4F"/>
-</indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="B1AFF793-9FC3-0ADC-A74F-EF7C274B6B31" name="Produit_Categorie_FK">
 <createdBy>Vincent Kelleher</createdBy>

@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6FDC9F63-92B4-757B-A571-8529B1002AF2" name="CommandeFournisseur">
+<createdBy>fredericradigoy</createdBy>
+<createdTime>2014-04-14 14:28:53 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>Schéma</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="refFournisseur" id="4CA01523-8315-E860-FE9E-C0683557DC4B">
+<createdBy>fredericradigoy</createdBy>
+<createdTime>2014-04-14 14:32:18 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>9303B76B-F91F-7EA5-D2A0-DB0E83C079F4</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C3D8C6FF-2B02-61DE-2922-3A27344D0A00" referredColumn="9303B76B-F91F-7EA5-D2A0-DB0E83C079F4"/>
+</associations>
+</Column>
+<Column name="refProduit" id="1E4DCA07-04BB-FDFA-9E42-A571C1A4996A">
+<createdBy>fredericradigoy</createdBy>
+<createdTime>2014-04-14 14:35:40 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<delegate>FF5CF036-0281-EE36-4D1E-47E92451E757</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF9073A4-C078-0424-F38C-9ADA26BCE729" referredColumn="FF5CF036-0281-EE36-4D1E-47E92451E757"/>
+</associations>
+</Column>
+<Column name="quantite" id="F2551920-BAE4-418C-92B7-6C840D697D96">
+<createdBy>fredericradigoy</createdBy>
+<createdTime>2014-04-14 14:40:21 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date" id="855073C8-E41F-75A6-00F2-26DBCC316A3E">
+<createdBy>fredericradigoy</createdBy>
+<createdTime>2014-04-14 14:40:46 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prix" id="F73DFCC0-2CCA-58B4-C610-40C20DF6B8AB">
+<createdBy>fredericradigoy</createdBy>
+<createdTime>2014-04-14 14:41:48 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="584B0B9C-0DFE-75F0-6822-987A4535E61A" name="CommandeFournisseur_PK">
+<createdBy>fredericradigoy</createdBy>
+<createdTime>2014-04-14 14:32:18 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>Schéma</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CA01523-8315-E860-FE9E-C0683557DC4B"/>
+<colUsage columnID="1E4DCA07-04BB-FDFA-9E42-A571C1A4996A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D0566DA-6E67-A6E8-8FB0-311CFE08DE21" name="CommandeFournisseur_Produit_FK">
+<createdBy>fredericradigoy</createdBy>
+<createdTime>2014-04-14 14:42:50 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="1705F8E0-9F22-DFBD-B440-11A425F55CE9" name="CommandeFournisseur_Fournisseur_FK">
+<createdBy>fredericradigoy</createdBy>
+<createdTime>2014-04-14 14:43:55 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="FDB0DE75-2F7C-A6AE-50DD-5E2135E42336" name="CommandeFournisseur_Fournisseur_FKv2">
+<createdBy>fredericradigoy</createdBy>
+<createdTime>2014-04-14 14:45:51 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CA01523-8315-E860-FE9E-C0683557DC4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83267DEF-A48A-1CBF-AA69-0775E702321D" name="CommandeFournisseur_Produit_FKv2">
+<createdBy>fredericradigoy</createdBy>
+<createdTime>2014-04-14 14:45:51 UTC</createdTime>
+<generatorID>Généré par l&apos;utilisateur</generatorID>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E4DCA07-04BB-FDFA-9E42-A571C1A4996A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
