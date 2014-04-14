@@ -9,24 +9,22 @@ CREATE OR REPLACE PROCEDURE produitsBientotHorsDeStock (seuil IN number)
  	SELECT stock INTO quantiteStock
  	FROM produit;
  
- 	IF quantiteStock <= seuil THEN
+ IF quantiteStock <= seuil THEN
  	  dbms_output.put('Ce produits est bientôt hors de stock');	 
- 	  
- 	  
-	END IF;
+ END IF;
 
-  END produitsBientotHorsDeStock; 
+END produitsBientotHorsDeStock; 
 
 
 /*Changer le statut d'une commande (commande, statut)*/
 
 CREATE PROCEDURE changerLeStatutDuneCommmande(commande commande%ROWTYPE, statut statut%ROWTYPE)
-	IS
+IS
 	
 	
-	BEGIN 
+BEGIN 
 	
 	
 	
 	
-	END changerLeStatutDuneCommmande;
+END changerLeStatutDuneCommmande;
