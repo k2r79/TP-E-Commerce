@@ -1,4 +1,3 @@
-
 /* Produits bientôt hors de stock (seuil) */
 
 CREATE OR REPLACE PROCEDURE produitsBientotHorsDeStock (v_seuil IN number) 
@@ -14,18 +13,3 @@ CREATE OR REPLACE PROCEDURE produitsBientotHorsDeStock (v_seuil IN number)
  END IF;
 
 END produitsBientotHorsDeStock; 
-
-
-/*Changer le statut d'une commande (commande, statut)*/
-
-CREATE PROCEDURE changerLeStatutDuneCommmande(v_commande commande%ROWTYPE, v_statut statut%ROWTYPE)
-IS
-	
-	
-BEGIN 
-	
-	
-	
-	
-END changerLeStatutDuneCommmande;
-
