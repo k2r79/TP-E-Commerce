@@ -10,9 +10,11 @@ BEGIN
 	FROM produit
 	WHERE produit.id = p_idproduit;
 	
-	DELETE FROM commandeproduit
-		   WHERE refproduit = p_idproduit
-		   AND refcommande = p_idcommande;
+	DELETE FROM COMMANDEPRODUIT
+		   WHERE ID IN (SELECT ID
+		   			   FROM COMMANDEPRODUIT
+		   			   WHERE REFPRODUIT = p_idproduit
+		               AND REFCOMMMANDE = p_idcommande);
 	
 	DBMS_OUTPUT.PUT_LINE('ce produit'|| nomProduit ||'a été supprimer de la commande');
 
