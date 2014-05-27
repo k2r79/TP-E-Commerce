@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="86A439B2-C12D-58C0-A2B2-8C8CC409D185" name="Commande_Expediteur_FK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:19:18 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<containerWithKeyObject>F42F542D-D52C-163F-7EFD-1442C4CE7D45</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>026F34FB-E9FE-8E6B-C06A-8FECDC59755D</localFKIndex>
+<keyObject>2D75C997-F8EB-C2F8-ACE9-43318CF4A14E</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

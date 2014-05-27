@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F72AD047-A2FA-43C1-1C6F-4F99F3EEEECE" name="StatutCommande_Statut_FK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:13:50 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<containerWithKeyObject>D4907EEE-6A1A-8057-0EDF-2BFB406C2807</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>D921B05C-253C-E968-FDAA-0A044FEA4407</localFKIndex>
+<keyObject>3A99B724-ADBE-8FAA-E643-9CFECF8818E4</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

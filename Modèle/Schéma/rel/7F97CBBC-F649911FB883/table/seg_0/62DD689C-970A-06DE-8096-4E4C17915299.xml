@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="62DD689C-970A-06DE-8096-4E4C17915299" name="CommandeProduit">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:05:17 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="CF6EB1C6-544D-12A3-311F-4ED9C6E282A6">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:06:20 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="refCommande" id="AD3772F9-D088-F671-B59F-DC12D8421DB9">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:06:20 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>D7762E9C-D8B4-EFEB-ACD1-28E400A77324</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="865FCE09-37F6-FE32-1BB1-BF30F89AEF68" referredColumn="D7762E9C-D8B4-EFEB-ACD1-28E400A77324"/>
+</associations>
+</Column>
+<Column name="refProduit" id="B31D4D82-45CC-5D9B-8C0C-6F199AA63049">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:07:06 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>FF5CF036-0281-EE36-4D1E-47E92451E757</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8885C14-9B74-7288-DBE7-53B440BDFDA6" referredColumn="FF5CF036-0281-EE36-4D1E-47E92451E757"/>
+</associations>
+</Column>
+<Column name="quantite" id="A64EDD07-C392-B943-1231-5FFB38903EEE">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:07:45 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prix" id="F516DC2A-7AB2-D3A1-7570-D3435703FF38">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:08:39 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tva" id="2C09C876-34B9-A0B8-236A-317D7775CCCD">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:09:22 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E44F6B77-9126-E2D9-4E4B-80C3F7A9BC76" name="CommandeProduit_PK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:06:20 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF6EB1C6-544D-12A3-311F-4ED9C6E282A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12962DC8-ED8A-7FD6-2FBA-A89A9CEBF4C5" name="CommandeProduit_Commande_FK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:10:03 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD3772F9-D088-F671-B59F-DC12D8421DB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DB1DD04-B36B-0C8D-69E0-A00C4114D734" name="CommandeProduit_Produit_FK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:10:14 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B31D4D82-45CC-5D9B-8C0C-6F199AA63049"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

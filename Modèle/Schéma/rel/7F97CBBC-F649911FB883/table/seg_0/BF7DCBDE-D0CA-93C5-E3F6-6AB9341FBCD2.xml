@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BF7DCBDE-D0CA-93C5-E3F6-6AB9341FBCD2" name="Tva">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:42:14 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="B126D174-08A7-6475-6FC2-663AA97224A9">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:43:02 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libelle" id="A33B8C3E-8D6D-A452-092A-01D1F34D1EAB">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:43:02 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valeur" id="F69DA47A-7B71-A4A2-858B-5F444BDA149A">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:43:02 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E9D1141-F7F4-3A8D-1C8E-344AE9240B38" name="Tva_PK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:43:02 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B126D174-08A7-6475-6FC2-663AA97224A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

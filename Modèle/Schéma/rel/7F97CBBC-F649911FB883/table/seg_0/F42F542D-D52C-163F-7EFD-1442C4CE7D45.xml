@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F42F542D-D52C-163F-7EFD-1442C4CE7D45" name="Commande">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:54:52 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="D7762E9C-D8B4-EFEB-ACD1-28E400A77324">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:55:32 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="reference" id="EB6CCF79-731E-39F1-4EBD-05DFB910ABC1">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:55:32 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date" id="E82CD9D1-1A1C-A373-D20B-B7031E9E5E34">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:55:47 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prixTotal" id="98BBF22D-C150-4512-185E-F87DF2EDE0DF">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:56:07 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="refClient" id="7338450D-C49A-E513-5E21-993921C6AC2C">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:56:18 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="refMoyenPaiement" id="4F51A034-3A09-3FCF-77FA-730F3827A534">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:57:06 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>29599BCD-E843-1DF2-F565-937FB698D696</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="08882150-4ADB-2DA1-834B-8518B2206C0F" referredColumn="29599BCD-E843-1DF2-F565-937FB698D696"/>
+</associations>
+</Column>
+<Column name="refExpediteur" id="39366BD3-9AEF-8727-8BB8-FA7130FC5DC7">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:57:26 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>B466DCDD-BA61-279A-DA9D-709D2BF4C741</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86A439B2-C12D-58C0-A2B2-8C8CC409D185" referredColumn="B466DCDD-BA61-279A-DA9D-709D2BF4C741"/>
+</associations>
+</Column>
+<Column name="refAdresseLivraison" id="CE91C4F8-EF53-ADA8-43CD-ADB56BA43933">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:04:06 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>4E52A682-E9F0-5276-5841-359E3504A494</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="26DBDEB9-AE98-FD75-13EF-4F74486BA871" referredColumn="4E52A682-E9F0-5276-5841-359E3504A494"/>
+</associations>
+</Column>
+<Column name="refAdresseFacturation" id="3C1188BF-C8BA-DD39-469F-83BC92A3A1B9">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:04:06 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>4E52A682-E9F0-5276-5841-359E3504A494</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="671E01F4-599F-7986-9150-0AAB97414CA0" referredColumn="4E52A682-E9F0-5276-5841-359E3504A494"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A73EDDFD-53CB-BC93-25B5-E8B98073E126" name="Commande_PK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:55:32 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7762E9C-D8B4-EFEB-ACD1-28E400A77324"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0AD3C633-9461-8A4B-5B15-AA657F3BE9F0" name="Commande_MoyenPaiement_FK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:03:18 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F51A034-3A09-3FCF-77FA-730F3827A534"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E068886-F19B-ED7B-3325-D4C3063AE1F7" name="Commande_Adresse_FK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:04:50 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE91C4F8-EF53-ADA8-43CD-ADB56BA43933"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B808FAC5-8588-E113-F729-02A3F49D9E92" name="Commande_Adresse_FKv2">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:05:03 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C1188BF-C8BA-DD39-469F-83BC92A3A1B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="026F34FB-E9FE-8E6B-C06A-8FECDC59755D" name="Commande_Expediteur_FK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:19:18 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39366BD3-9AEF-8727-8BB8-FA7130FC5DC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

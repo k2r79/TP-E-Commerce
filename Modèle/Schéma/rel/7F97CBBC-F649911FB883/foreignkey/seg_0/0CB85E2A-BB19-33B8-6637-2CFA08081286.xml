@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0CB85E2A-BB19-33B8-6637-2CFA08081286" name="Produit_Tva_FK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 08:44:33 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<containerWithKeyObject>39DDEC0B-56EA-7A77-A98E-25AD834487EF</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>44F0C5B5-5C05-DE9E-F2DC-5FF83AEE4F8B</localFKIndex>
+<keyObject>6E9D1141-F7F4-3A8D-1C8E-344AE9240B38</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

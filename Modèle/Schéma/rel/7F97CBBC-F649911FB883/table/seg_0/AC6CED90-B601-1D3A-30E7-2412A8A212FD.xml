@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC6CED90-B601-1D3A-30E7-2412A8A212FD" name="Statut">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:11:03 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="5134FB1D-8298-CAF4-BE5B-45CD2A716D6F">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:11:45 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="libelle" id="AEEEAB5B-C3CD-6F7D-1FBA-4659776F34BC">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:11:45 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3A99B724-ADBE-8FAA-E643-9CFECF8818E4" name="Statut_PK">
+<createdBy>Vincent Kelleher</createdBy>
+<createdTime>2014-04-09 09:11:45 UTC</createdTime>
+<ownerDesignName>Schéma</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5134FB1D-8298-CAF4-BE5B-45CD2A716D6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
